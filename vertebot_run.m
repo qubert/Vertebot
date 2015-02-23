@@ -6,6 +6,7 @@
 % %
 % %--------------------------------------------------------------------------
 
+print("Vertebot rocks!"
 
 %% Close all
 close all
@@ -385,14 +386,14 @@ clf
 subplot(2,1,1)
 plot(timer2(2:end) * 1000000, 'color', 'b', 'linewidth', 2)
 xlim([1 nsteps])
-title(horzcat('Brain step time: ', num2str(round(mean(timer2) * 1000000)), ' ± ', num2str(round(std(timer2 * 1000000))), ' us'))
+title(horzcat('Brain step time: ', num2str(round(mean(timer2) * 1000000)), ' Â± ', num2str(round(std(timer2 * 1000000))), ' us'))
 xlabel('t')
 ylabel('us')
 
 subplot(2,1,2)
 plot(timer1(2:end) * 1000, 'color', 'b', 'linewidth', 2)
 xlim([1 nsteps/camera_interval])
-title(horzcat('Camera step time: ', num2str(round(mean(timer1 * 1000))), ' ± ', num2str(round(std(timer1 * 1000))), ' ms'))
+title(horzcat('Camera step time: ', num2str(round(mean(timer1 * 1000))), ' Â± ', num2str(round(std(timer1 * 1000))), ' ms'))
 xlabel('Cam step')
 ylabel('ms')
 
